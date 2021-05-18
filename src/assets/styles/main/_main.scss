@@ -2,17 +2,99 @@
     width: 100%;
     padding: 10px;
 
+
     .main_options{
         display: flex;
-        width: 20%;
+        width: 500px;
         padding: 30px;
         flex-direction: column;
         overflow-y: scroll;
         height: 80vh;
-
     }
 }
 
-.MuiButton-containedSecondary{
-    margin: 10px 0 !important;
+.MuiButton-containedPrimary{
+    margin: 10px !important;
+}
+
+.main_noMatriz{
+    display: none;
+}
+
+
+p.main_p{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main_links{
+    margin-top: 100px;
+}
+
+.distanceFromTo{
+    background: rgb(204, 204, 204);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 5px;
+
+    p{
+        margin: 10px;
+        font-weight: bold;
+    }
+}
+
+.main_contentInside{
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main_contentInside{
+
+    .content{
+
+        .diagram-component{
+            margin: 7px;
+            height: 200px;
+            width: 450px !important;
+            canvas{
+                color: white !important;
+            }
+        }
+    }
+}
+
+.main_boxMiniItem{
+    color: black !important;
+}
+
+.main_boxItem {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+    background: rgb(204, 204, 204);
+    justify-content: space-evenly;
+
+}
+
+.main_buttonMargin{
+    margin: 10px;
+}
+
+.item{
+    margin: 10px;
+    border: 10px solid rgb(204, 204, 204);
+    border-radius: 10px;
+}
+
+hr{
+    height: 80px;
+    width: 100%;
+    border: none;
 }
