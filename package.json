@@ -1,7 +1,7 @@
 {
-  "name": "grafos-01",
+  "name": "grafos-t1",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
@@ -11,20 +11,27 @@
     "@testing-library/user-event": "^12.1.10",
     "gojs": "^2.1.38",
     "gojs-react": "^1.0.10",
-    "node-sass": "^5.0.0",
+    "lodash": "^4.17.21",
+    "mathjs": "^9.3.2",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "vercel": "^22.0.1",
+    "sass": "^1.32.12",
+    "sweetalert": "^2.1.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "webpack --mode=development",
-    "build": "webpack --mode=production",
-    "dev-server": "webpack serve",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "jest": "jest --verbose",
+    "jest-watch": "jest --verbose --watch",
+    "jest-watch-all": "jest --verbose --watchAll",
+    "generar-doc": "script/generar-doc.sh",
+    "playground": "node test/playground.js"
   },
   "eslintConfig": {
     "extends": [
@@ -45,20 +52,12 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.13.16",
-    "@babel/preset-env": "^7.13.15",
-    "@babel/preset-react": "^7.13.13",
-    "@svgr/webpack": "^5.5.0",
-    "babel-loader": "^8.2.2",
-    "core-js": "^3.11.0",
-    "css-loader": "^5.2.4",
-    "file-loader": "^6.2.0",
-    "image-webpack-loader": "^7.0.1",
-    "regenerator-runtime": "^0.13.7",
-    "sass-loader": "^11.0.1",
-    "style-loader": "^2.0.0",
-    "webpack": "^5.35.1",
-    "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2"
-  }
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "prettier": "2.2.1"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:davideliseo/grafos-t1.git",
+  "license": "MIT"
 }
